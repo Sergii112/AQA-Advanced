@@ -27,3 +27,6 @@ const calculateSumArrow = (num1, num2) => {
 // concise arrow function expression
 const calculateSumArrow2 = (num1, num2) => num1 + num2
 console.log(calculateSumArrow2(2,6))
+
+// const calculateSquareArea = (width, height) => width * height
+// console.log(calculateSquareArea(6, 10))  - moy primer s dz
