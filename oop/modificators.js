@@ -1,4 +1,4 @@
-class Student {
+// class Student {
 //     constructor(name) {
 //         this.name = name; // Публічна властивість
 //     }
