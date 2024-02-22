@@ -1,4 +1,4 @@
-// // Створення об'єкта "прототипу"
+ // // Створення об'єкта "прототипу"
 // const animalPrototype = {
 //     speak() {
 //         console.log(`${this.name} says ${this.sound}`);
