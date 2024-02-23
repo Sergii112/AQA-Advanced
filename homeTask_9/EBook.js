@@ -16,11 +16,12 @@ export default class EBook extends Book {
     }
 
     set format(newFormat) {
-        if (typeof newFormat === 'string') {
-            this._format = newFormat;
-        } else {
-            console.log('Invalid format!');
+        if (typeof newFormat !== 'string') {
+            console.error("Error: Invalid format!");
+            return
         }
+
+        this._format = newFormat;
     }
 
     static createFromBook(book, format) {

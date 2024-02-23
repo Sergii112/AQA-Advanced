@@ -17,11 +17,11 @@ book1.title = "Ogogo";
 console.log('New Title:', book1.title);
 
 console.log('Old Author:', book1.author);
-book1.author ="John Smith";
+book1.author = "John Smith";
 console.log('New Author:', book1.author);
 
 console.log('Old year:', book1.year);
-book1.year = 2026;
+book1.year = 2001;
 console.log('New year:', book1.year);
 
 console.log("-----------------------------");

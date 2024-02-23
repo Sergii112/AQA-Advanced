@@ -15,7 +15,7 @@ export default class Book {
 
     set title(newTitle) {
         if (typeof newTitle !== 'string') {
-            console.error("Error: Title should be string!")
+            console.error("Error: Title should be string!");
             return
         }
         if (newTitle.length < 1){
@@ -30,11 +30,15 @@ export default class Book {
     }
 
     set author(newAuthor) {
-        if (typeof newAuthor === 'string') {
-            this._author = newAuthor;
-        } else {
-            console.log("Invalid author!");
+        if (typeof newAuthor !== 'string') {
+            console.error("Error: Author should be string!");
+            return
         }
+        if (typeof newAuthor.length < 1) {
+            console.error("Error: Author can't be less than 1 character!");
+            return
+        }
+        this._author = newAuthor;
     }
 
     get year() {
@@ -42,16 +46,27 @@ export default class Book {
     }
 
     set year(newYear) {
-        if (typeof newYear === 'number' && newYear > 0) {
-            this._year = newYear;
-        } else {
-            console.log("Invalid year!");
+        if (typeof newYear !== 'number') {
+            console.error("Error: Year should be number!");
+            return
         }
+
+        if (newYear < 2000) {
+            console.error("Error: Invalid year data!")
+            return
+        }
+
+        if (newYear > 2024) {
+            console.error("Error: Invalid year data!")
+            return
+        }
+
+        this._year = newYear;
     }
 
     static findOldestBook(books) {
         return books.reduce((oldest, current) => {
-            return current.year < oldest.year ? current : oldest;
+            return current.year < oldest.year ? current : oldest
         });
     }
 }
