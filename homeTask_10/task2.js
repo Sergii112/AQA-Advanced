@@ -1,19 +1,15 @@
 function fetchToDo() {
-  return new Promise((resolve, reject) => {
-    fetch(`https://jsonplaceholder.typicode.com/todos/1`)
-      .then((response) => response.json())
-      .then(toDo => resolve(toDo))
-      .catch(error => reject(error))
-  })
+  return fetch(`https://jsonplaceholder.typicode.com/todos/1`)
+      .then((res) => res.json())
+      .catch((e) => console.log(e))
+  
 }
 
 function fetchUser() {
-  return new Promise((resolve, reject) => {
-    fetch(`https://jsonplaceholder.typicode.com/users/1`)
-      .then((response) => response.json())
-      .then(user => resolve(user))
-      .catch(error => reject(error))
-  })
+  return fetch(`https://jsonplaceholder.typicode.com/users/1`)
+      .then((res) => res.json())
+      .catch((e) => console.log(e))
+
 }
 
 Promise.all([
