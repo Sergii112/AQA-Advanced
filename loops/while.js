@@ -22,13 +22,13 @@
 //     index++
 // }
 
+const index = 0;
 
-let index = 0
-
-while (index > 0){
-    console.log(index)
+while (index > 0) {
+  console.log(index);
 }
 
-do {                         // vukonae pershy iteraciyu v nezalegnosti  ymova spravdgyetsya chu ni
-    console.log(index)
-} while (index > 0)
+do {
+  // vukonae pershy iteraciyu v nezalegnosti  ymova spravdgyetsya chu ni
+  console.log(index);
+} while (index > 0);

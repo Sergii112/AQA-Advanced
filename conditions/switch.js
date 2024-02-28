@@ -1,4 +1,3 @@
-
 // const userAge = 15
 // switch (userAge) {
 //     case 10:                      //userAge === 10 (stroge porivnyannya)
@@ -11,4 +10,3 @@
 //     default:
 //         console.log("Unhandled age")
 // }
-

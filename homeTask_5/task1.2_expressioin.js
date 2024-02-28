@@ -1,5 +1,5 @@
-const calculateSquareArea = function(width, height) {
-    return width * height
-}
+const calculateSquareArea = function (width, height) {
+  return width * height;
+};
 
-console.log(calculateSquareArea(5, 20))
+console.log(calculateSquareArea(5, 20));

@@ -22,19 +22,18 @@
 
 // All
 
-function promiseA (){
-  return Promise.resolve("A")
+function promiseA() {
+  return Promise.resolve('A');
 }
 
-function promiseB (){
-  return Promise.resolve("B")
+function promiseB() {
+  return Promise.resolve('B');
 }
 
-function promiseC (){
+function promiseC() {
   // return Promise.resolve("C")
-  return Promise.reject(new Error("Error C"))
+  return Promise.reject(new Error('Error C'));
 }
-
 
 // promiseA().then(promiseB).then(promiseC)
 
@@ -48,7 +47,6 @@ function promiseC (){
 // })
 //     .catch(e=> console.log(e.message))
 
-
 // allSettled
 // Promise.allSettled([
 //     promiseA(),
@@ -58,7 +56,6 @@ function promiseC (){
 //     .then((values)=>{
 //         console.log(values)
 //     })
-
 
 // race
 // Promise.race([
@@ -80,23 +77,24 @@ function promiseC (){
 //         console.log(values)
 //     }).catch((e)=> e.message)
 
-
 const pErr = new Promise((resolve, reject) => {
-  reject("Always fails");
+  reject('Always fails');
 });
 
 const pSlow = new Promise((resolve, reject) => {
-  setTimeout(resolve, 500, "Done eventually");
+  setTimeout(resolve, 500, 'Done eventually');
 });
 
 const pFast = new Promise((resolve, reject) => {
-  setTimeout(resolve, 100, "Done quick");
+  setTimeout(resolve, 100, 'Done quick');
 });
 
 Promise.any([pErr, pSlow, pFast]).then((value) => {
   console.log(value);
 });
 
-Promise.race([pErr, pSlow, pFast]).then((value) => {
-  console.log(value);
-}).catch((e)=>console.log(e))
+Promise.race([pErr, pSlow, pFast])
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((e) => console.log(e));

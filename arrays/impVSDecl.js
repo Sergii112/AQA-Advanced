@@ -14,7 +14,7 @@
 //
 // console.log(sum)
 
-///////////////////////////////////
+/// ////////////////////////////////
 
 // ----------- Declaratuvnuy pidhid programyvannya ----- I variant.
 // Декларативне програмування - це підхід, при якому програміст описує, що має бути зроблено,
@@ -29,7 +29,7 @@
 // }
 // console.log(sum)
 
-//////////////////////
+/// ///////////////////
 // ---------------------- Declaratuvnuy pidhid programyvannya ----- II variant (Vukorustovyem metod <reduce> ).
 // Метод <reduce> застосовує задану стрілочну функцію до аккумулятора та кожного елементу масиву,
 // результатом є одне значення.
@@ -40,6 +40,5 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-const sum = numbers.reduce((acc, num)=> acc + num)
-console.log(sum)
-
+const sum = numbers.reduce((acc, num) => acc + num);
+console.log(sum);

@@ -1,11 +1,10 @@
-//"const" ne zminna
-//const personAge = 22
-//console.log(personAge)
+// "const" ne zminna
+// const personAge = 22
+// console.log(personAge)
 
 // "let" mogna zminyuvatu
 
-//let name = "Serg"
+// let name = "Serg"
 // console.log(name)
 // name = "Vova"
 // console.log(name)
-

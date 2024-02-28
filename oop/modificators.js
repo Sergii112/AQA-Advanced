@@ -42,7 +42,6 @@
 // acc.withdraw(15)
 // acc.printBalance()
 
-
 // PRIVATE
 //
 // class BankAccount {

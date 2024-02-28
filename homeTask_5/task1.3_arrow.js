@@ -1,6 +1,3 @@
-const calculateSquareArea = (width, height) => {
-    return width * height
-}
+const calculateSquareArea = (width, height) => width * height;
 
-console.log(calculateSquareArea(5, 11))
-
+console.log(calculateSquareArea(5, 11));

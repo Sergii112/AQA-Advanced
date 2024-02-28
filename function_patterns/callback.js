@@ -1,4 +1,4 @@
-////////////////////
+/// /////////////////
 // function hof (callback) {
 //     console.log("High Order Function")
 //     callback()
@@ -7,16 +7,16 @@
 // const sayHello = () => console.log("Hello from Callback")
 //
 // hof(sayHello)
-////////////////////
+/// /////////////////
 
-//use case: ///////////////////////////////////////////
+// use case: ///////////////////////////////////////////
 // function fetchData(url, callback) { // function pruymae url i callback
 //     fetch(url)
 //         .then(response => response.json()) // takoj callback
 //         .then(data => callback(data))  // takoj callback
 //         .catch(error => console.log(error))  // takoj callback
-//}
-/////////////////////////////////////////////////////////////
+// }
+/// //////////////////////////////////////////////////////////
 // function hof (cb){
 //     console.log("High Order Function")
 //     cb()
@@ -27,7 +27,7 @@
 //
 // hof(sayGoodBye)
 
-////////////////
+/// /////////////
 // function processPayment(onSuccessCb, onFailureCb){
 //     try{
 //         if(Date.now() % 2 === 0){
@@ -50,4 +50,4 @@
 //
 // processPayment(onPaymentSuccess, onPaymentError)
 
-///////////////////
+/// ////////////////
