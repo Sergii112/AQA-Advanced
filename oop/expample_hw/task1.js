@@ -1,9 +1,9 @@
-import Book from "./Book.js";
-import EBook from "./EBook.js";
+import Book from './Book.js';
+import EBook from './EBook.js';
 
-const book = new Book("Harry Potter")
+const book = new Book('Harry Potter');
 
 // book.title = ""
 // book.title = true
 
-const ebook = EBook.fromBookAndFileFormat(book, "PDF")
+const ebook = EBook.fromBookAndFileFormat(book, 'PDF');

@@ -15,9 +15,6 @@
 //
 // console.log(doubled);
 
-
-
-
 // Функціональний підхід
 // Функціональне програмування - це парадигма, в якій функції розглядаються як об’єкти першого класу,
 // тобто можуть бути передані як аргументи і повернуті із функцій.
@@ -33,22 +30,22 @@
 // Об'єкти визначаються класами, які визначають структуру та поведінку об'єктів.
 
 class Calculator {
-    constructor() {
-        this.PI = Math.PI
-    }
+  constructor() {
+    this.PI = Math.PI;
+  }
 
-    sum(a, b) {
-        return a + b;
-    }
+  sum(a, b) {
+    return a + b;
+  }
 
-    double(num) {
-        return num * 2;
-    }
+  double(num) {
+    return num * 2;
+  }
 }
 
 const calc = new Calculator();
 const sum = calc.sum(5, 3);
 const doubled = calc.double(sum);
-//console.log(calc.PI)
+// console.log(calc.PI)
 
-console.log(`Aaaa: ${doubled}`) // Aaaa: 16
+console.log(`Aaaa: ${doubled}`); // Aaaa: 16

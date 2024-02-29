@@ -1,9 +1,8 @@
+// Рекурсія - це потужний інструмент в програмуванні, який використовується для вирішення задач шляхом
+// розбиття їх на більш прості частини. В JavaScript рекурсія реалізується за допомогою рекурсивних функцій.
+// Рекурсивна функція - це функція, яка викликає саму себе під час свого виконання.
 
-//Рекурсія - це потужний інструмент в програмуванні, який використовується для вирішення задач шляхом
-//розбиття їх на більш прості частини. В JavaScript рекурсія реалізується за допомогою рекурсивних функцій.
-//Рекурсивна функція - це функція, яка викликає саму себе під час свого виконання.
-
-////////////////////
+/// /////////////////
 // function countToZero(startValue){
 //     for (let i = startValue; i >= 0; i--) {
 //         console.log(i)
@@ -11,9 +10,9 @@
 // }
 //
 // countToZero(5)
-///////////////////////////////
+/// ////////////////////////////
 
-///////////////// -- Vukorustannya FUNCTION RECYRSII --
+/// ////////////// -- Vukorustannya FUNCTION RECYRSII --
 // function countToZero(startValue){
 //     console.log(startValue)
 //     if(startValue > 0){
@@ -22,9 +21,9 @@
 // }
 //
 // countToZero(5)
-/////////////////////////
+/// //////////////////////
 
-/////////////////////////////////
+/// //////////////////////////////
 // const tree = {
 //     "id": 1,
 //     "name": "Root",
@@ -75,22 +74,19 @@
 //
 // processNode(tree)
 //
-//////////////////////////////////
+/// ///////////////////////////////
 
-//////////////////////////////////
-function divide(num1, num2){
-// robush validachiy i dilennya i povertayu rezyltat
+/// ///////////////////////////////
+function divide(num1, num2) {
+  // robush validachiy i dilennya i povertayu rezyltat
 }
 
 try {
-    divide(1,5)
-}catch (e) {// tyt vidlovlyuyu pomulke yaka moglastatusya v bloci functsii
-
+  divide(1, 5);
+} catch (e) {
+  // tyt vidlovlyuyu pomulke yaka moglastatusya v bloci functsii
 }
 
 try {
-    divide(0,5)
-}catch (e) {
-
-}
-
+  divide(0, 5);
+} catch (e) {}

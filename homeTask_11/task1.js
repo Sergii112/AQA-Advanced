@@ -1,8 +1,8 @@
+/* eslint-disable consistent-return */
 async function fetchToDo() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    const body = await response.json();
-    return body;
+    return await response.json();
   } catch (e) {
     console.log(e);
   }
@@ -11,8 +11,7 @@ async function fetchToDo() {
 async function fetchUser() {
   try {
     const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
-    const user = await response.json();
-    return user;
+    return await response.json();
   } catch (e) {
     console.log(e);
   }

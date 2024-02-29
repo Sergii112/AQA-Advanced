@@ -1,4 +1,3 @@
-
 // function calculateSum(num1, num2){
 //     console.log("num1", num1)
 //     console.log("num2", num2)
@@ -21,7 +20,6 @@
 // }
 //
 // console.log(calculateSum(1,2,5,4))
-
 
 // const printUserInfo = (age, name, ...rest) => {
 //     console.log("User age", age)

@@ -1,5 +1,4 @@
-
-///////////////////////
+/// ////////////////////
 // function Person (name, age) {
 //     this.name = name
 //     this.age = age
@@ -12,9 +11,9 @@
 // const user2 = new Person('Alice', 23)
 // console.log(user2) // abo console.log(user1, user2) i pruburaem console.log(user1)
 
-/////////////////////////
+/// //////////////////////
 
-/////////////////////////
+/// //////////////////////
 // function Person (name, age) {
 //     this.name = name
 //     this.age = age
@@ -27,9 +26,9 @@
 // const user2 = new Person('Alice', 21)
 // user2.sayHello()
 // ---ZAVDYAKU 'this' VUKONYETSYA POSULANNYA NA NOVOSTVORENNUY OB'EKT!!!
-///////////////////////////
+/// ////////////////////////
 
-///////////////////////////
+/// ////////////////////////
 // function Person (name, age) {
 //         this.name = name
 //         this.age = age
@@ -45,7 +44,7 @@
 // console.log(user2)
 // user2.sayHello()
 
-            // -- Vidpovid' v takomy vupadky:
+// -- Vidpovid' v takomy vupadky:
 // Person { name: 'Peter', age: 23, sayHello: [Function (anonymous)] }
 // Hello, my name is Peter.
 // Person { name: 'Alice', age: 21, sayHello: [Function (anonymous)] }
@@ -53,4 +52,4 @@
 
 // Vuvede vse sho poprosuv!
 
-////////////////////////////////////
+/// /////////////////////////////////
