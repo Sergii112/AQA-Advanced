@@ -8,6 +8,7 @@ export default defineConfig({
     viewportHeight: 720,
     defaultCommandTimeout: 4000,
     retries: { runMode: 1, openMode: 1 },
+    scrollBehavior: 'center',
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
