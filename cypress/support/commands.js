@@ -1,5 +1,5 @@
-// ***********************************************
-// This example commands.js shows you how to
+///***********************************************
+// This example commands.ts shows you how to
 // create various custom commands and overwrite
 // existing commands.
 //
@@ -23,3 +23,36 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// @ts-ignore
+
+// declare global {
+//   namespace Cypress {
+//     interface Chainable {
+//       login(email: string, password: string): Chainable<void>
+//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
+//     }
+//   }
+// }
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      fillForm(data: {name: string, email: string, rememberMe: boolean }): Chainable<void>;
+      getById(id: string): Chainable<Element>;
+    }
+  }
+}
+
+Cypress.Commands.add('fillForm', ({name, email, rememberMe = false}: {name: string, email: string, rememberMe: boolean }) => {
+  cy.get('nb-card.inline-form-card input[type="text"]' ).first().type(name);
+  cy.get('nb-card.inline-form-card input[type="text"]' ).eq(1).type(email);
+
+  if (rememberMe) cy.get('nb-card.inline-form-card span.custom-checkbox').click();
+});
+
+
+Cypress.Commands.add('getById', function (id: string) {
+  return cy.get(`#${id}`);
+});
